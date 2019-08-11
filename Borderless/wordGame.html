@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app ng-controller="GameCntl" ng-keyup="keyup($event)">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word Game</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js_w/jquery.min.js"></script>
+    <script src="js_w/angular.min.js"></script>
+    <script src="js_w/jquery.jplayer.min.js"></script>
+    <script src="game.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            padding-top: 0px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+			<header id="header">
+				<h1><a href="index.html">Borderless</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">Learn</a></li>
+						<li><a href="elements.html">About us</a></li>
+						<li><a href="#" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+<ul class="nav navbar-nav navbar-right">
+                    <li><a>{{number_right}} correct</a></li>
+
+                </ul>
+
+
+
+
+
+    <div>
+        <center>
+
+            <div style="margin-top: 50px">
+
+                <img src="img/{{word}}.jpg">
+            </div>
+
+            <div>
+                <h1 style="font-size: 72px;">{{clue}} </h1>
+            </div>
+            <div ng-hide="!right_indicator">
+                <h1 style="font-size: 72px; color: #468847">✔</h1>
+            </div>
+            <div ng-hide="!wrong_indicator">
+                <h1 style="font-size: 72px; color: #ff0000">X</h1>
+            </div>
+
+            <button type="button" class="button" id="clueBtn" value="Clue" onclick="openClue()">Clue</button>
+            <div id="clueDiv"></div>
+
+        </center>
+    </div>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <br><br><br><br>
+    <div id="jpId"></div>
+
+    <script>
+    $(document).ready(function() {
+        $("#jpId").jPlayer( {
+            ready: function () {
+                $(this).jPlayer("setMedia", {mp3: "correct.mp3"});
+            }
+        });
+    });
+    </script>
+
+    <!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<section class="links">
+						<div class="row">
+
+
+						</div>
+					</section>
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; Borderless. All rights reserved.</li>
+								<li>Design: <a href="">Borderless</a></li>
+
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+
+								<li>
+									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+</body>
+</html>

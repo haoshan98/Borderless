@@ -1,0 +1,53 @@
+body {background-color:rgb(250, 235, 208);;color:black;}
+/*area for task*/
+#task{position:absolute;width:50%; height:10%; top:3%; left:25%;}
+/*area for results*/
+#result1{position:absolute;width:15%;height:20%;left:0%;text-align:center}
+#result2{position:absolute;width:15%;height:20%;right:0%;text-align:center}
+
+/*area for colors*/
+nav{position:absolute;width:60%; height:20%; top:15%; left:20%;padding:0%;margin:0%;}
+nav div{width:24%;height:50%;border:1.9px solid black;float:left;}
+/*different colors*/
+#green{background-color:green;}
+#red{background-color:red;}
+#yellow{background-color:yellow;}
+#brown{background-color:brown;}
+#black{background-color:black;}
+#pink{background-color:pink;}
+#orange{background-color:orange;}
+#blue{background-color:blue;}
+/*area for figures*/
+section{position:absolute;width:90%; height:50%; top:40%; left:5%;padding:0%;margin:0%;}
+/*center for figure*/
+#circlepl div, #squarepl div, #rectanglepl div, #ovalpl div, #trianglepl div,#rhombuspl div{position:absolute;top:50%;left:50%}
+/*different figures*/
+#circlepl{position:absolute;width:33.33%;height:50%;top:0%;left:0%;}
+
+#circle{position:absolute;left:-30px;top:-30px;width:60px;height:60px;border-radius:50%;background-color:white;} 
+ 
+#squarepl{position:absolute;width:33.33%;height:50%;top:0%;left:33.33%;}
+
+#square{position:absolute;left:-30px;top:-30px;width:60px;height:60px;background-color:white;}
+
+#rectanglepl{position:absolute;width:33.33%;height:50%;top:0%;left:66.66%;}
+
+#rectangle{position:absolute;left:-45px;top:-30px;width:90px;height:60px;background-color:white;}
+ 
+#ovalpl{position:absolute;width:33.33%;height:50%;top:50%;left:0%;}
+
+#oval{position:absolute;left:-45px;top:-30px;width:90px;height:60px;background-color:white;border-radius:50%;}
+
+#trianglepl{position:absolute;width:33.33%;height:50%;top:50%;left:33.33%;}
+
+#triangle{position:absolute;left:-50px;top:-50px;width:0px;height:0px;border: 50px solid transparent;border-bottom:50px solid white;}
+
+#rhombuspl{position:absolute;width:33.33%;height:50%;top:50%;left:66.66%;}
+
+#rhombus{position:absolute;left:-30px;top:-30px;width:60px;height:60px;background-color:white;transform: rotate(45deg);}
+
+#chcol,#chfig{
+visibility:hidden; position:absolute;bottom :0%}
+
+#taskcol, #taskfig{
+visibility:hidden;

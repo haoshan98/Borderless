@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    		<title>Analog Clock</title>
+    		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    		<meta name="description" content="" />
+    		<meta name="keywords" content="" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script type="text/javascript" src="js/clockScript.js"></script>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/clockStyle.css">
+        <!-- <link rel="stylesheet" href="css/style-xlarge.css" /> -->
+        <link rel="stylesheet" href="css/style-small.css" />
+    </head>
+    <body>
+      <!-- Header -->
+        <header id="header">
+          <h1><a href="index.html">Borderless</a></h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="generic.html">Learn</a></li>
+              <li><a href="elements.html">About us</a></li>
+              <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+          </nav>
+        </header>
+
+      <!-- Main -->
+  		<section id="main" class="wrapper">
+      <div class="container">
+        <header class="major">
+          <h2>Check Your Time</h2>
+        </header>
+        <div class="analog-clock">
+            <svg width="140" height="140">
+                <circle id="clock-face" cx="70" cy="70" r="65"/>
+                <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+                <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+                <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+                <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+
+                <text x="15" y="52">10</text>
+                <text x="34" y="30">11</text>
+                <text x="62" y="19">12</text>
+
+                <text x="95" y="31">1</text>
+                <text x="114" y="52">2</text>
+                <text x="124" y="76">3</text>
+
+                <text x="114" y="100">4</text>
+                <text x="95" y="120">5</text>
+                <text x="65" y="129">6</text>
+
+                <text x="10" y="76">9</text>
+                <text x="19" y="100">8</text>
+                <text x="36" y="120">7</text>
+            </svg>
+
+            <!-- <div class="time-text">
+                <span id="hr">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="suffix"></span>
+            </div> -->
+          </div>
+
+          <div class="question">
+            <h2>Question</h2>
+            <h3 id="test2">10</h3>
+            <!-- <h3 id="test">10</h3> -->
+
+            <h2>score </h2>
+            <h3 id="ans">0</h3>
+          </div>
+          <br><br><br>
+            <div class="buttons" >
+    					<button type="button" class="button" id="button1">A</button>
+    				  <button type="button" class="button" id="button2">B</button>
+    					<button type="button" class="button" id="button3">C</button>
+    					<button type="button" class="button" id="button4">D</button>
+  					</div>
+            <br><br>
+            <!-- <form ACTION="">
+            <div id="radioDiv"></div> -->
+              <!-- <input type="button" value="Submit" onclick="checkAnswer()"> -->
+              <div>
+              <button type="button" class="button" id="submit">Submit</button>
+            </div>
+            <!-- </form> -->
+
+
+
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="container">
+          <section class="links">
+            <div class="row">
+
+
+            </div>
+          </section>
+          <div class="row">
+            <div class="8u 12u$(medium)">
+              <ul class="copyright">
+                <li>&copy; Borderless. All rights reserved.</li>
+                <li>Design: <a href="">Borderless</a></li>
+
+              </ul>
+            </div>
+            <div class="4u$ 12u$(medium)">
+              <ul class="icons">
+                <li>
+                  <a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                </li>
+
+                <li>
+                  <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </body>
+</html>
